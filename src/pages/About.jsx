@@ -1,10 +1,10 @@
 const tools = [
-  { group: 'Frontend', items: 'React · JavaScript · TypeScript' },
-  { group: 'Backend', items: 'Node.js · Express · REST APIs' },
-  { group: 'Styling', items: 'Tailwind CSS · CSS · Figma' },
-  { group: 'Data', items: 'MongoDB · Mongoose' },
-  { group: 'Workflow', items: 'Git · GitHub · VS Code' },
-]
+  { group: "Frontend", items: "JavaScript · TypeScript · React " },
+  { group: "Backend", items: "Node.js · Express.js · REST APIs" },
+  { group: "Styling", items: "CSS · TailwindCSS · Sass · Figma" },
+  { group: "Data", items: "MongoDB · PostgreSQL " },
+  { group: "Workflow", items: "Git · GitHub · VS Code" },
+];
 
 export default function About() {
   return (
@@ -13,13 +13,18 @@ export default function About() {
         <div className="about-text">
           <p className="eyebrow">// A LITTLE ABOUT ME</p>
           <h1 className="page-title">
-            Curious by nature. <span className="accent">Developer</span> by craft.
+            Turning <span className="accent">curiosity</span> into code
           </h1>
           <p>
-            [Two sentences on who you are and what you enjoy building. Mention what you care about,
-            such as clean code, accessible interfaces or the small details.]
+            I'm a developer passionate about building meaningful digital
+            experiences and turning ideas into functional products. I enjoy
+            working with modern technologies, writing clean and maintainable
+            code, and creating interfaces that feel intuitive and effortless.
           </p>
-          <p>[One more sentence on how you learn and work, and what kind of problems you like to solve.]</p>
+          <p>
+            I believe in continuous learning, thoughtful problem-solving, and
+            paying attention to the details that make a real difference.
+          </p>
           <div className="status-pill">
             <span className="status-dot" />
             AVAILABLE FOR OPPORTUNITIES
@@ -38,7 +43,6 @@ export default function About() {
           </ul>
         </div>
       </section>
-      <div className="container page-count">03 / 04</div>
     </>
-  )
+  );
 }

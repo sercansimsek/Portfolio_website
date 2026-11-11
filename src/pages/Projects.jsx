@@ -1,19 +1,21 @@
-import { useState } from 'react'
-import { categories, projects } from '../data/projects.js'
+import { useState } from "react";
+import { categories, projects } from "../data/projects.js";
 
 export default function Projects() {
-  const [active, setActive] = useState('all')
-  const visible = active === 'all' ? projects : projects.filter((p) => p.category === active)
+  const [active, setActive] = useState("all");
+  const visible =
+    active === "all" ? projects : projects.filter((p) => p.category === active);
 
   return (
     <section className="container page">
       <div className="page-head">
         <p className="eyebrow">// SELECTED WORK</p>
         <h1 className="page-title">
-          Projects I'm <span className="accent">proud</span> of
+          Projects with <span className="accent">purpose</span>
         </h1>
         <p className="lead">
-          A few things I've designed, built and shipped. Each one solved a real problem.
+          A showcase of digital products I've designed, developed, and
+          delivered.
         </p>
       </div>
 
@@ -35,7 +37,7 @@ export default function Projects() {
         {visible.map((p) => (
           <article key={p.id} className="card">
             <div className="card-thumb" aria-hidden="true">
-              <span className="card-num">{String(p.id).padStart(2, '0')}</span>
+              <span className="card-num">{String(p.id).padStart(2, "0")}</span>
               <span className="card-bar" />
             </div>
             <div className="card-body">
@@ -57,5 +59,5 @@ export default function Projects() {
         ))}
       </div>
     </section>
-  )
+  );
 }
