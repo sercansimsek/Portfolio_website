@@ -5,9 +5,6 @@ export default function Footer() {
         <span>
           © {new Date().getFullYear()} Sercan Şimşek. All rights reserved.
         </span>
-        <span style={{ fontFamily: "var(--font-mono)" }}>
-          Designed &amp; built by me
-        </span>
       </footer>
     </div>
   );
